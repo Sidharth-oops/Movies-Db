@@ -12,8 +12,11 @@ class Login extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       body: Container(
+        height: double.maxFinite,
         decoration: BoxDecoration(
           gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
             colors: [g1, g2],
           ),
         ),
