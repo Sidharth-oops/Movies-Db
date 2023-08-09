@@ -9,6 +9,7 @@ class Login extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(
@@ -16,7 +17,16 @@ class Login extends StatelessWidget {
             colors: [g1, g2],
           ),
         ),
-        child: SingleChildScrollView(),
+        child: SingleChildScrollView(
+          child: Padding(
+            padding:  EdgeInsets.all(size.height*0.030),
+            child: Column(
+              children: [
+                Image.asset(image1),
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }

@@ -17,7 +17,7 @@ void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Splash(),
+      home: Login(),
     ),
   );
 }
