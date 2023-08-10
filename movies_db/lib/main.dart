@@ -1,3 +1,4 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 import 'package:lottie/lottie.dart';
@@ -14,11 +15,13 @@ import 'package:tmdb_api/tmdb_api.dart';
 import 'favourite.dart';
 import 'menu_page.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Signup(),
+      home:Splash(),
     ),
   );
 }
@@ -31,7 +34,7 @@ class Splash extends StatelessWidget {
     Future.delayed(Duration(seconds: 3), () {
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
-          builder: (context) => myApp(), // Replace with your main screen widget
+          builder: (context) => Login(), // Replace with your main screen widget
         ),
       );
     });
