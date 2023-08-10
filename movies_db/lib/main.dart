@@ -4,6 +4,7 @@ import 'package:lottie/lottie.dart';
 import 'package:movies_db/drawer_screen.dart';
 import 'package:movies_db/login.dart';
 import 'package:movies_db/search.dart';
+import 'package:movies_db/signup.dart';
 import 'package:movies_db/utils/text.dart';
 import 'package:movies_db/widgets/top_rated.dart';
 import 'package:movies_db/widgets/trending.dart';
@@ -17,7 +18,7 @@ void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Login(),
+      home: Signup(),
     ),
   );
 }

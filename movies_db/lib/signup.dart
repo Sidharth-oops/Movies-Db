@@ -6,8 +6,8 @@ import 'package:flutter_svg/svg.dart';
 
 import 'consts.dart';
 
-class Login extends StatelessWidget {
-  const Login({super.key});
+class Signup extends StatelessWidget {
+  const Signup({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +31,7 @@ class Login extends StatelessWidget {
               children: [
                 Image.asset(image1),
                 Text(
-                  "Welcome Back",
+                  "Hi there!",
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontWeight: FontWeight.w600,
@@ -40,7 +40,7 @@ class Login extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  "Please Log In",
+                  "Let's Get Started",
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
@@ -98,7 +98,7 @@ class Login extends StatelessWidget {
                         color: kButtonColor,
                         borderRadius: BorderRadius.circular(37)),
                     child: Text(
-                      'Continue',
+                      'Create an Account',
                       style: TextStyle(
                         color: kWhiteColor,
                         fontWeight: FontWeight.w700,
@@ -132,7 +132,7 @@ class Login extends StatelessWidget {
                       borderRadius: BorderRadius.circular(37),
                     ),
                     child: Text(
-                      'Create an Account',
+                      'Log in',
                       style: TextStyle(
                         color: kWhiteColor,
                         fontWeight: FontWeight.w700,
